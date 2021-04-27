@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import SearchForm from "./components/SearchForm"
+// import SearchResults from "./components/SearchResults"
 import Table from "./components/Table";
 import Footer from "./components/Footer";
 // import Wrapper from "./components/Wrapper";
@@ -10,6 +11,7 @@ function App() {
       <div>
         <Header />
         <SearchForm/>
+        {/* <SearchResults/> */}
         <Table></Table>
         <Footer />
       </div>

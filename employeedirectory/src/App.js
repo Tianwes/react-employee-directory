@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
-import SearchForm from "./components/SearchForm"
+import SearchBar from "./components/SearchBar"
 // import SearchResults from "./components/SearchResults"
 import Table from "./components/Table";
 import Footer from "./components/Footer";
@@ -10,7 +10,7 @@ function App() {
   return (
       <div>
         <Header />
-        <SearchForm/>
+        <SearchBar/>
         {/* <SearchResults/> */}
         <Table></Table>
         <Footer />

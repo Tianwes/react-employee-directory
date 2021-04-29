@@ -6,6 +6,8 @@ import "./style.css";
 // employee api information
 // table needs to be able to change/not static
 
+
+
 function Table() {
     return (
 <div className="container">

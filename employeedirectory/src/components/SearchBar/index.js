@@ -1,8 +1,9 @@
 import React from "react";
 import "./style.css";
+// import searchReturn from "./utils/API.js"
 
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
-function SearchForm(props) {
+function SearchBar(props) {
   return (
     <form className="search">
       <div className="form-group">
@@ -14,14 +15,14 @@ function SearchForm(props) {
           type="text"
           className="form-control"
           placeholder="Search the Employee Directory"
-          id="employees"
+          id="employeeSearchBar"
         />
       </div>
     </form>
   );
 }
 
-export default SearchForm;
+export default SearchBar;
 
 
 

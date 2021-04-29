@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css";
+import getUsers from "../../utils/API";
+//        ^   from utils/API
 
 function SearchResults(props) {
   return (

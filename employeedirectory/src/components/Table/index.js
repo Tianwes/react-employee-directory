@@ -1,14 +1,27 @@
 import React from "react";
+import getUsers from "../../utils/API";
 import "./style.css";
-
 
 // My need to add !(state= & extends)! because I'm passing in 
 // employee api information
-// table needs to be able to change/not static
+// table needs to be dynamic??
 
+class Table extends React.Component {
 
+  state = {
+    query: "",
+    results:[]
+  }
 
-function Table() {
+  componentDidMount() {
+    getUsers.getUsers()
+      .then(res => {
+        this.setState({ results: res.data.results })
+        console.log(this.state.results)
+      }).catch(err => console.log(err))
+  }
+
+render() {
     return (
 <div className="container">
   <h2>Hover Rows</h2>
@@ -44,6 +57,9 @@ function Table() {
     </tbody>
   </table>
 </div>
+
     );
 }
+}
+
 export default Table;

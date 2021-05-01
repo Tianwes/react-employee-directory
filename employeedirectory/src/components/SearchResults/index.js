@@ -1,18 +1,21 @@
 import React from "react";
 import "./style.css";
 import Table  from "react-bootstrap/Table";
-import { ArrowUp, ArrowDown } from 'react-bootstrap-icons';
+// import { caret-up-fill, caret-down-fill } from 'react-bootstrap-icons';
 
 function SearchResults({users}) {
-  const[order, setOrder] = "ascend";
+  // const[order, setOrder] = "ascend";
   // sort function a to b b to a
   // destructure users
   return (
-   <Table striped bordered hover>
+  //  <Table striped bordered hover>
+  <div className="container-fluid">
+  <table className="table table-hover table-striped w-75 mx-auto">
      <thead>
        <tr>
        <th>#</th>
-       <th>Name{order === "ascend" ? "new component icon arrow down" : "new comp arrow up"}</th>
+       <th>Name</th>
+       {/* goes inside name tag: {order === "ascend" ? "new component icon arrow down" : "new comp arrow up"} */}
        <th>Email</th>
        <th>Phone</th>
        <th>D.O.B</th>
@@ -33,7 +36,9 @@ function SearchResults({users}) {
          )
        } )}
      </tbody>
-   </Table>
+     </table>
+     </div>
+  //  </Table>
   );
 }
 

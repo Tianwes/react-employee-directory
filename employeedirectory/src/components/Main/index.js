@@ -23,13 +23,8 @@ class Main extends React.Component {
       .then(res => {
         this.setState({ users: res.data.results })
         console.log(this.state.users)
-      //  console.log(this.state.results[6].name.first)
       })
   }
-
-  
-  
-  // how to pass info down to Main? prop drilling?
 
 render() {
     return (

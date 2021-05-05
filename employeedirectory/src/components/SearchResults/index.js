@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./style.css";
 // import Table  from "react-bootstrap/Table";
 import { CaretUpFill, CaretDownFill } from 'react-bootstrap-icons';
+// import SearchBar from "../SearchBar";
 
 function SearchResults({users}) {
   // sort function a to b b to a
@@ -9,8 +10,8 @@ function SearchResults({users}) {
   const [firstNameSorting, setFirstNameSorting] = useState("")
   const [lastNameSorting, setLastNameSorting] = useState("")
   const [usersSorted, setUsersSorted] = useState(users)
-
-// Sorts alphabetically by FIRST name
+ 
+  // Sorts alphabetically by FIRST name
   const handleFirstNameSort= () => {
     if(firstNameSorting === "ascend") {
       setFirstNameSorting("descend")
@@ -39,7 +40,6 @@ function SearchResults({users}) {
 
   return (
   //  <Table striped bordered hover>
-  <div className="container-fluid">
   <table className="table table-hover table-striped w-75 mx-auto">
      <thead>
        <tr>
@@ -52,7 +52,7 @@ function SearchResults({users}) {
        </tr>
      </thead>
      <tbody>
-       {/*  destructure users   */}
+       {/*  destructured users   */}
        {users.map(({login, picture, name, email, phone, location})=> {
          return (
            <tr key={login.uuid}>
@@ -69,8 +69,6 @@ function SearchResults({users}) {
        } )}
      </tbody>
      </table>
-     </div>
-  //  </Table>
   );
 }
 

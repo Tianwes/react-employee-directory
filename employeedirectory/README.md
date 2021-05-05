@@ -20,6 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Usage
 Gain quick access to non-sensitive employee information.
+![React-Employee-Directory](https://user-images.githubusercontent.com/72744783/117189896-b3f39f80-adac-11eb-91ba-a59374056a27.gif)
 
 ## Contributing
 I'm open to suggestions  
